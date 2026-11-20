@@ -3,31 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <title>Shop Easy</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="nav-logo border">
-                <div class="logo"></div>
-            </div>
-
-            <div class="nav-address border">
-                <p class="add1">Deliver to</p>
-
-                <div class="add-icon">
-                    <i class="fa-sharp fa-solid fa-location-dot"></i>
-                    <p class="add2">India</p>
-                </div>
-                
-            </div>
-
-        </div>
-           
-        
+    <header class="header">
+        <h1>SHOP EASY</h1>
+        <label for="search">
+            <input id="search" type="search" placeholder="Search products...">
+        </label>
+        <button type="button">Cart</button>
     </header>
-    
+
+    <nav class="navigation">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#category">Categories</a>
+        <a href="#offer">Offers</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main id="home">
+        <section class="sale" id="offer">
+            <h2>BIG SALE — UP TO 50% OFF</h2>
+        </section>
+
+        <section class="products" id="products" aria-label="Featured products">
+            <article class="product1">
+                <img src="https://th.bing.com/th/id/OIP.HVIsck3ALRM09Aq_ve7IdgHaEK?w=328&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Laptop">
+                <h3>Laptop</h3>
+                <h5>$1,000</h5>
+                <p>Latest Intel Core i9 laptop with RTX 5090 graphics, 32GB RAM, and 1TB storage.</p>
+                <button type="button">Add to cart</button>
+            </article>
+
+            <article class="product2">
+                <img src="data:image/webp;base64,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" alt="Smart OLED television">
+                <h3>TV</h3>
+                <h5>$10,000</h5>
+                <p>Smart 8K OLED TV with voice control.</p>
+                <button type="button">Add to cart</button>
+            </article>
+
+            <article class="product3">
+                <img src="https://th.bing.com/th/id/OIP.F2yVAVDCdTAbSWkBxvaU3AHaIB?w=150&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Wireless earpods">
+                <h3>Earpods</h3>
+                <h5>$500</h5>
+                <p>Wireless earpods with noise cancellation and automatic sound adjustment.</p>
+                <button type="button">Add to cart</button>
+            </article>
+
+            <article class="product4">
+                <img src="https://th.bing.com/th/id/OIP.UtT0InXXAiP1RiBurvWQrgHaEc?w=228&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Smartphone">
+                <h3>Mobile</h3>
+                <h5>$10,000</h5>
+                <p>Latest smartphone with Snapdragon 10 Elite processor, 16GB RAM, and cooling fans.</p>
+                <button type="button">Add to cart</button>
+            </article>
+        </section>
+
+        <section class="comparison" id="category" aria-label="Product comparison">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">Product Comparison</th>
+                    </tr>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Rating</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Laptop</td>
+                        <td>$1,000</td>
+                        <td>4.5 / 5</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>TV</td>
+                        <td>$10,000</td>
+                        <td>4.2 / 5</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>Earpods</td>
+                        <td>$500</td>
+                        <td>4.0 / 5</td>
+                        <td>Out of stock</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile</td>
+                        <td>$10,000</td>
+                        <td>4.3 / 5</td>
+                        <td>Available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Create an account</h2>
+            <form action="#">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email">
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone number">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Your password">
+
+                <fieldset>
+                    <legend>Gender</legend>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interested in</legend>
+                    <label><input type="checkbox" name="interest" value="electronics"> Electronics</label>
+                    <label><input type="checkbox" name="interest" value="fashion"> Fashion</label>
+                    <label><input type="checkbox" name="interest" value="books"> Books</label>
+                </fieldset>
+
+                <label for="city">City</label>
+                <select name="city" id="city">
+                    <option value="">Choose a city</option>
+                    <option value="gurugram">Gurugram</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="bengaluru">Bengaluru</option>
+                </select>
+
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Your address">
+
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset" class="reset-button">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h5>© 2026 Shop Easy</h5>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#privacy">Privacy policy</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
