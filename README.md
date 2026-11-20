@@ -1,10 +1,10 @@
 #  Shopping_Site
 
-A frontend Amazon-inspired website built using HTML and CSS.
+A frontend shopping  website built using HTML and CSS.
 
 ##  About the Project
 
-This project is a practice implementation of an Amazon-style e-commerce website. It focuses on recreating the basic layout and visual appearance of an online shopping platform.
+This project is a practice implementation of an e-commerce-style website. It focuses on recreating the basic layout and visual appearance of an online shopping platform.
 
 ##  Technologies Used
 
@@ -13,7 +13,7 @@ This project is a practice implementation of an Amazon-style e-commerce website.
 
 ##  Features
 
-- Amazon-inspired homepage design
+- homepage design
 - Navigation bar
 - Product display sections
 - Custom styling using CSS
