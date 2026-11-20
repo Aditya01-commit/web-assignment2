@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #  Shopping_Site
 
 A frontend shopping  website built using HTML and CSS.
@@ -25,3 +26,7 @@ This project was created to practise and improve my HTML and CSS skills through 
 ---
 
 **Author:** Aditya
+=======
+# web-assignment2
+It is a e-commerce website named Shop Easy based on html and css 
+>>>>>>> 96dd647604774aee655f5abcb9d40ac1e21f5279
